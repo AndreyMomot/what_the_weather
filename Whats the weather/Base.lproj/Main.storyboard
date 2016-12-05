@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whats_the_weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_anya.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="4oL-MZ-DSl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="4db-0B-0ev"/>
+                                    <constraint firstAttribute="width" constant="375" id="UDp-pU-buq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGM-uh-tPI">
+                                <rect key="frame" x="47" y="36" width="280" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="1rP-xQ-Lea"/>
+                                    <constraint firstAttribute="width" constant="280" id="BKu-tO-ERQ"/>
+                                    <constraint firstAttribute="height" constant="23" id="CrY-0P-tjG"/>
+                                    <constraint firstAttribute="height" constant="23" id="rf6-O3-nYw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1rP-xQ-Lea"/>
+                                        <exclude reference="CrY-0P-tjG"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a city..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtM-ei-DtO">
+                                <rect key="frame" x="120" y="88" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="84Z-em-lOG"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="9UI-VK-pk6"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="134" id="Yia-ef-cyA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="tG5-pI-3U5"/>
+                                    <constraint firstAttribute="width" constant="134" id="uTD-QT-O4J"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="vIR-Xb-Nlb"/>
+                                    <constraint firstAttribute="height" constant="21" id="xZN-ZL-SXk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="84Z-em-lOG"/>
+                                        <exclude reference="9UI-VK-pk6"/>
+                                        <exclude reference="Yia-ef-cyA"/>
+                                        <exclude reference="tG5-pI-3U5"/>
+                                        <exclude reference="vIR-Xb-Nlb"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Kharkov, Kiev..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha0-ei-eDL">
+                                <rect key="frame" x="47" y="122" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8BJ-wf-3Nb"/>
+                                    <constraint firstAttribute="width" constant="280" id="Bgb-XF-k3S"/>
+                                    <constraint firstAttribute="width" constant="280" id="XCJ-IJ-iKK"/>
+                                    <constraint firstAttribute="height" constant="30" id="tL6-mU-9QQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8BJ-wf-3Nb"/>
+                                        <exclude reference="Bgb-XF-k3S"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEZ-53-FNU">
+                                <rect key="frame" x="91" y="166" width="192" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="728-RD-D8W"/>
+                                    <constraint firstAttribute="width" constant="192" id="H1x-6A-0vF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="Z3i-zs-ybN"/>
+                                    <constraint firstAttribute="width" constant="141" id="aCe-IK-gUj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="lfc-wY-jz7"/>
+                                    <constraint firstAttribute="height" constant="30" id="wrl-pC-0pj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="What's the weather?"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="728-RD-D8W"/>
+                                        <exclude reference="Z3i-zs-ybN"/>
+                                        <exclude reference="aCe-IK-gUj"/>
+                                        <exclude reference="lfc-wY-jz7"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="findWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8eB-Gq-pz7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLH-9m-Oce">
+                                <rect key="frame" x="47" y="212" width="280" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="6bN-ha-bsS"/>
+                                    <constraint firstAttribute="width" constant="280" id="KOf-Gu-IFH"/>
+                                    <constraint firstAttribute="height" constant="180" id="OeG-86-M8w"/>
+                                    <constraint firstAttribute="width" constant="280" id="PWu-Zi-9Z2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6bN-ha-bsS"/>
+                                        <exclude reference="KOf-Gu-IFH"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="top" secondItem="ha0-ei-eDL" secondAttribute="bottom" constant="14" id="18M-bI-Pct"/>
+                            <constraint firstItem="FLH-9m-Oce" firstAttribute="top" secondItem="KEZ-53-FNU" secondAttribute="bottom" constant="34" id="22u-S4-vlP"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3uf-Qf-XEw"/>
+                            <constraint firstItem="FLH-9m-Oce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="432-j4-kht"/>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4mM-dS-AFi"/>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ed-Gc-BMY"/>
+                            <constraint firstItem="FLH-9m-Oce" firstAttribute="top" secondItem="KEZ-53-FNU" secondAttribute="bottom" constant="16" id="8Xj-dC-sGz"/>
+                            <constraint firstItem="FLH-9m-Oce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99e-2Q-6QL"/>
+                            <constraint firstItem="FGM-uh-tPI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANf-7F-oad"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BDP-OG-7kZ"/>
+                            <constraint firstItem="FGM-uh-tPI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="CqD-iq-vUr"/>
+                            <constraint firstItem="FLH-9m-Oce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FgB-lw-LzY"/>
+                            <constraint firstItem="FGM-uh-tPI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GWX-hk-wAf"/>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="top" secondItem="ha0-ei-eDL" secondAttribute="bottom" constant="39" id="N8H-p6-GD2"/>
+                            <constraint firstItem="ha0-ei-eDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O9p-kg-gcr"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ONQ-DM-byC"/>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qk6-Ub-XSb"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="top" secondItem="FGM-uh-tPI" secondAttribute="bottom" constant="29" id="TUr-2o-5kl"/>
+                            <constraint firstItem="ha0-ei-eDL" firstAttribute="top" secondItem="jtM-ei-DtO" secondAttribute="bottom" constant="13" id="UMh-HJ-4Wt"/>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="top" secondItem="ha0-ei-eDL" secondAttribute="bottom" constant="37" id="ZIA-aB-h2a"/>
+                            <constraint firstItem="ha0-ei-eDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bDP-UH-wS7"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="top" secondItem="FGM-uh-tPI" secondAttribute="bottom" constant="29" id="iC7-Ze-H9e"/>
+                            <constraint firstItem="4oL-MZ-DSl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="jSs-N2-6vh"/>
+                            <constraint firstItem="4oL-MZ-DSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mEd-9s-3ea"/>
+                            <constraint firstItem="FGM-uh-tPI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="mZO-3C-hNN"/>
+                            <constraint firstItem="KEZ-53-FNU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q43-H2-P3f"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfO-F7-9FK"/>
+                            <constraint firstItem="jtM-ei-DtO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tsK-LF-gF5"/>
+                            <constraint firstItem="ha0-ei-eDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uCf-eP-YiS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ANf-7F-oad"/>
+                                <exclude reference="mZO-3C-hNN"/>
+                                <exclude reference="O9p-kg-gcr"/>
+                                <exclude reference="uCf-eP-YiS"/>
+                                <exclude reference="3uf-Qf-XEw"/>
+                                <exclude reference="BDP-OG-7kZ"/>
+                                <exclude reference="TUr-2o-5kl"/>
+                                <exclude reference="tfO-F7-9FK"/>
+                                <exclude reference="tsK-LF-gF5"/>
+                                <exclude reference="4mM-dS-AFi"/>
+                                <exclude reference="7Ed-Gc-BMY"/>
+                                <exclude reference="N8H-p6-GD2"/>
+                                <exclude reference="Qk6-Ub-XSb"/>
+                                <exclude reference="ZIA-aB-h2a"/>
+                                <exclude reference="22u-S4-vlP"/>
+                                <exclude reference="432-j4-kht"/>
+                                <exclude reference="99e-2Q-6QL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cityTextField" destination="ha0-ei-eDL" id="a8R-gF-k1f"/>
+                        <outlet property="resultLabel" destination="FLH-9m-Oce" id="vPr-Qd-xAV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547.5" y="275.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_anya.JPG" width="640" height="640"/>
+    </resources>
+</document>
